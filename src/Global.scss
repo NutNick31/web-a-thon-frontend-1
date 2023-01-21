@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  transition: all 0.3s ease;
+}
+
+:root {
+  --pri: white;
+  --sec: black;
+  --ter: red;
+}
