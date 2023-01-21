@@ -5,25 +5,17 @@ import { Link } from "react-router-dom";
 
 const NavOpts = [
   { id: 1, opt: "Home", href: "/" },
-  { id: 2, opt: "Applied", href: "/applied" },
-  { id: 3, opt: "Posted", href: "/posted" },
+  { id: 2, opt: "My-Request", href: "/applied" },
+  { id: 3, opt: "My-Competition", href: "/posted" },
   { id: 4, opt: "Profile", href: "/profile" },
 ];
 
-const Navbar = ({ theme, toggleTheme }) => {
-  const [logo, setLogo] = React.useState("logo_light");
-  const [jobs, setJobs] = useState([]);
-
+const Navbar = () => {
   return (
     <nav className="nav">
       <div className="nav_blur"></div>
       <div className="nav_container">
-        <div className="nav_logo">
-          <label className="switch">
-            <input type="checkbox" onClick={toggleTheme} />
-            <span className="slider round"></span>
-          </label>
-        </div>
+        <div className="nav_logo"></div>
         <ul className="nav_links">
           {NavOpts.map((NavOpt) => {
             const { opt, href, id } = NavOpt;
